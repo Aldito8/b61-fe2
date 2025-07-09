@@ -10,7 +10,7 @@ import PostDetail from './pages/PostDetail'
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="w-full flex gap-4 p-4 justify-center border-b mb-8">
+      <div className="w-full translate-x-1/2 right-1/2 fixed flex gap-4 py-4 justify-center border-b">
         <Button asChild variant="outline">
           <Link to="/">Home</Link>
         </Button>
@@ -21,6 +21,7 @@ export default function App() {
           <Link to="/posts">Posts</Link>
         </Button>
       </div>
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />

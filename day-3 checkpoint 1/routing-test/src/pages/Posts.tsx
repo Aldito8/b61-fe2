@@ -8,7 +8,7 @@ const posts = [
 
 export default function Posts() {
     return (
-        <div className="flex flex-col items-center justify-center h-screen">
+        <div className="flex flex-col items-center justify-center min-h-screen">
             <h1 className="text-4xl font-bold mb-4">Posts Page</h1>
             <ul className="mb-4">
                 {posts.map((post) => (
